@@ -8,7 +8,7 @@ function ToDo({ taskdetails }) {
 
   const todoContent = isEditing ? (
     <>
-      <input type="text" />
+      <input type="text" className="border border-gray-600 rounded-md px-3" />
       <button className="px-4">Save</button>
     </>
   ) : (
@@ -22,7 +22,7 @@ function ToDo({ taskdetails }) {
 
   return (
     <>
-      <input type="checkbox" />
+      <input type="checkbox" checked={taskdetails.done} />
       {todoContent}
 
       <button>Delete</button>
