@@ -8,7 +8,11 @@ function ToDo({ taskdetails }) {
 
   const todoContent = isEditing ? (
     <>
-      <input type="text" className="border border-gray-600 rounded-md px-3" />
+      <input
+        type="text"
+        className="border border-gray-600 rounded-md px-3"
+        value={taskdetails.title}
+      />
       <button className="px-4">Save</button>
     </>
   ) : (

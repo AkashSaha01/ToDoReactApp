@@ -6,6 +6,7 @@ import taskCollection from "../data/taskCollection";
 function TodoList() {
   const [tasks, setTasks] = useState(taskCollection);
   console.log(tasks);
+  const handleChangeTask = () => {};
 
   return (
     <ul>
