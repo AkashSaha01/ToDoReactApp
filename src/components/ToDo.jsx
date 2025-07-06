@@ -9,12 +9,14 @@ function ToDo({ taskdetails }) {
   const todoContent = isEditing ? (
     <>
       <input type="text" />
-      <button>Save</button>
+      <button className="px-4">Save</button>
     </>
   ) : (
     <>
       {taskdetails.title}
-      <button>Edit</button>
+      <button onClick={() => setisEditing(true)} className="px-4">
+        Edit
+      </button>
     </>
   );
 
