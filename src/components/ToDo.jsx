@@ -20,7 +20,9 @@ function ToDo({ taskdetails, onChangeTodo, onDeleteTodo }) {
           })
         }
       />
-      <button className="px-4">Save</button>
+      <button onClick={() => setisEditing(false)} className="px-4">
+        Save
+      </button>
     </>
   ) : (
     <>
