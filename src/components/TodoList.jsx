@@ -3,15 +3,15 @@ import getNextToDoID from "../utils/getNextToDoID";
 import ToDo from "./ToDo";
 import taskCollection from "../data/taskCollection";
 
-function TodoList() {
+function TodoList({ tasks, onChangeTodo, onDeleteTodo }) {
   return (
     <ul>
       {tasks.map((task) => (
         <li key={task.id}>
           <ToDo
             taskdetails={task}
-            onChangeTodo={handleChangeTask}
-            onDeleteTodo={handleDeleteTask}
+            onChangeTodo={onChangeTodo}
+            onDeleteTodo={onDeleteTodo}
           />
         </li>
       ))}

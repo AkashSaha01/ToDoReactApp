@@ -37,7 +37,11 @@ export default function App() {
     <div>
       <h1 className="font-bold text-4xl py-3">A Simple To DO App</h1>
       <AddTodo />
-      <TodoList />
+      <TodoList
+        tasks={tasks}
+        onChangeTodo={handleChangeTask}
+        onDeleteTodo={handleDeleteTask}
+      />
     </div>
   );
 }
